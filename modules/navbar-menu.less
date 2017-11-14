@@ -1,0 +1,77 @@
+//navbar main
+@navbarMainItemBgColor: #eee;
+@navbarMainItemColor: black;
+@navbarMainItemHoverBgColor: #7EB851;
+@navbarMainItemHoverColor: black;
+@navbarMainItemSelectedBgColor: #C4B09E;
+@navbarMainItemSelectedColor: black;
+
+.borderBlack(@borderThickness, @radius) {
+    border: @borderThickness solid black;
+    border-radius: @radius;
+}
+
+.navbar2 {
+
+    & ul {
+        display: inline-block;
+    }
+
+    & li {
+    .borderBlack(1px, 2px);
+    margin: 5px;
+    background-color: @navbarMainItemBgColor;
+    }
+
+    & li.selected {
+       background-color: @navbarMainItemSelectedBgColor;
+    }
+
+    & li:hover {
+        background-color: @navbarMainItemHoverBgColor;
+        text-decoration: underline;
+    }
+
+    & li a {
+    color: @navbarMainItemColor;
+    }
+
+    & li a.selected {
+    color: @navbarMainItemColor;
+    }
+}
+
+
+
+
+// General
+//@navbarAccentColor:         #9FB129;
+//@navbarItemBgColor:         #00C200;
+//@navbarItemColor:           black;
+//@navbarItemHoverColor:      #00C200; //lighten(@navbarItemColor, 20%);
+//@navbarItemHoverBgColor:    #eee; //#666;
+
+// Menu item current/selected
+// 14/11 @navbarItemSelectedColor:       #eee;
+// 14/11 @navbarItemSelectedBgColor:     #00C200;
+//@navbarItemSelectedBorderColor: darken(lime, 10%);
+
+// Mobile button
+//@navbarMobileItemBorderColor:           #eee;
+//@navbarMobileItemHoverBorderColor:      @navbarAccentColor;
+//@navbarMobileBorderColor:               #ddd;
+
+// The menu button
+// 14/11 @navbarMenuButtonColor:         inherit;
+// 14/11 @navbarMenuButtonBgColor:       transparent;
+//@navbarMenuButtonBorderColor:   #999;
+
+// The menu button hover
+// 14/11 @navbarMenuButtonHoverColor:         @navbarMenuButtonColor;
+// 14/11 @navbarMenuButtonHoverBgColor:       @navbarMenuButtonBgColor;
+//@navbarMenuButtonHoverBorderColor:   #333;
+
+// The menu button clicked
+// 14/11 @navbarMenuButtonClickedColor:          #9FB129;
+// 14/11 @navbarMenuButtonClickedBgColor:        @navbarMenuButtonHoverBgColor;
+//@navbarMenuButtonClickedBorderColor:    lime;
